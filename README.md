@@ -14,7 +14,7 @@ This implementation simulates the client server communication using python. Sock
 - The client and server can be on separate machines or on the same machine.
 - Make sure that the code is written to PEP standard and uses exception handling to handle potential errors
 - Write unit tests
-- Upload the project to your source control website
+- Upload the project to the source control website
 
 # Directory Tree
 ```
