@@ -16,3 +16,15 @@ This implementation simulates the client server communication using python. Sock
 - Write unit tests
 - Upload the project to your source control website
 
+# Directory Tree
+```
+C:\Users\rohba\OneDrive\Desktop\Fiv 4\
+├── Task requirements.docx
+├── client.py
+├── client_unit_test.py
+├── received_file.txt
+├── sample.txt
+├── server.py
+├── server_unit_test.py
+└── tree.txt
+```
