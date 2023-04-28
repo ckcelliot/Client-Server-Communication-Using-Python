@@ -4,10 +4,10 @@ This implementation simulates the client server communication using python. Sock
 
 
 # Task requirements
-Build a simple client/server network
-Create a dictionary, populate it, serialize it and send it to a server
-Create a text file and send it to a server
-With the dictionary, the user should be able to set the pickling format to one of the following: binary, JSON and XML
+- Build a simple client/server network
+- Create a dictionary, populate it, serialize it and send it to a server
+- Create a text file and send it to a server
+- With the dictionary, the user should be able to set the pickling format to one of the following: binary, JSON and XML
 The user will need to have the option to encrypt the text in a text file
 The server should have a configurable option to print the contents of the sent items to the screen and or to a file
 The server will need to be able to handle encrypted contents
