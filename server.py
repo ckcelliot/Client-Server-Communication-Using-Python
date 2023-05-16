@@ -12,6 +12,9 @@ SERVER_PORT = 1234
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.bind((SERVER_IP, SERVER_PORT))
 
+# Writing on console to mark server starting
+print("Server started.....")
+
 # Listen for incoming connections
 server_socket.listen()
 
@@ -20,6 +23,8 @@ client_socket, client_address = server_socket.accept()
 
 # Receive the data from the client
 data = client_socket.recv(1024)
+
+
 
 # Check if the data is a dictionary or a file
 if isinstance(data, bytes):
