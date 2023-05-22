@@ -3,6 +3,7 @@ import json
 import pickle
 import xml.etree.ElementTree as ET
 from cryptography.fernet import Fernet
+import unittest
 
 # Replace with the IP address and port of the server
 SERVER_IP = "127.0.0.1"
@@ -76,3 +77,31 @@ else:
 
 # Close the socket
 client_socket.close()
+
+'''
+if __name__ == '__main__':
+    unittest.main()
+
+
+# The following checks require that "Sample.txt" file contains the following 
+# message: "Hello, world."
+
+# To enable tests, remove block comment quotations on lines 81/107
+class ClientTestingInsideClient(unittest.TestCase):
+
+    def test_data_encryption(self):
+        """
+        Checks that data has been encrypted by checking whether the planned
+        file data is the same as the data stored in the encrypted data variable.
+        """
+        self.assertFalse(encrypted_contents == "Hello, world.")
+
+    def test_decryption_clientside(self):
+        """
+        Tests if the proposed solution works clientside before deploying in server
+        product. Helps us to avoid any unforeseen issues when separating out the
+        scripts.
+        """
+        decrypted_contents = cipher.decrypt(encrypted_contents)
+        self.assertTrue(decrypted_contents == "Hello, world.")
+'''
